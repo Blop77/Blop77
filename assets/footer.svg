@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="Thanks for stopping by">
+<title>Thanks for stopping by</title>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#64d2ff"/><stop offset=".5" stop-color="#2997ff"/><stop offset="1" stop-color="#bf5af2"/></linearGradient></defs>
+<style>
+  .w1 { animation: slide 9s linear infinite; }
+  .w2 { animation: slide 14s linear infinite reverse; }
+  .w3 { animation: slide 20s linear infinite; }
+  @keyframes slide { to { transform: translateX(-400px); } }
+  .t { font: 700 26px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; fill: #e6edf3; letter-spacing: .3px; }
+  .m { font: 500 14px 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, monospace; fill: #8b949e; letter-spacing: 2px; }
+  
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<clipPath id="c"><rect width="1200" height="150" rx="18"/></clipPath>
+<rect width="1200" height="150" rx="18" fill="#07090d"/>
+<g clip-path="url(#c)">
+  <path class="w3" d="M0,92 q100.0,-18 200.0,0 t200.0,0 q100.0,-18 200.0,0 t200.0,0 q100.0,-18 200.0,0 t200.0,0 q100.0,-18 200.0,0 t200.0,0 q100.0,-18 200.0,0 t200.0,0 q100.0,-18 200.0,0 t200.0,0 q100.0,-18 200.0,0 t200.0,0 V150 H0 Z" fill="url(#g)" opacity=".12"/>
+  <path class="w2" d="M0,104 q100.0,-14 200.0,0 t200.0,0 q100.0,-14 200.0,0 t200.0,0 q100.0,-14 200.0,0 t200.0,0 q100.0,-14 200.0,0 t200.0,0 q100.0,-14 200.0,0 t200.0,0 q100.0,-14 200.0,0 t200.0,0 q100.0,-14 200.0,0 t200.0,0 V150 H0 Z" fill="url(#g)" opacity=".2"/>
+  <path class="w1" d="M0,118 q100.0,-10 200.0,0 t200.0,0 q100.0,-10 200.0,0 t200.0,0 q100.0,-10 200.0,0 t200.0,0 q100.0,-10 200.0,0 t200.0,0 q100.0,-10 200.0,0 t200.0,0 q100.0,-10 200.0,0 t200.0,0 q100.0,-10 200.0,0 t200.0,0 V150 H0 Z" fill="url(#g)" opacity=".45"/>
+</g>
+<text x="600" y="46" text-anchor="middle" class="t">Thanks for stopping by. Let's build something that matters.</text>
+<text x="600" y="72" text-anchor="middle" class="m">— BLOP77 —</text>
+<rect x=".5" y=".5" width="1199" height="149" rx="18" fill="none" stroke="#1f2633"/>
+</svg>

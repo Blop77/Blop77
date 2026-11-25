@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="SegSense">
+<title>SegSense</title>
+<defs>
+  <radialGradient id="glow" cx="88%" cy="10%" r="70%"><stop offset="0" stop-color="#ff453a" stop-opacity=".22"/><stop offset="1" stop-color="#ff453a" stop-opacity="0"/></radialGradient>
+  <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#ff453a" stop-opacity="0"/><stop offset=".5" stop-color="#ff453a"/><stop offset="1" stop-color="#ff453a" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+  .tag { font: 700 14px 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, monospace; fill: #ff453a; letter-spacing: 2px; }
+  .h { font: 800 38px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; fill: #e6edf3; letter-spacing: -.8px; }
+  .p { font: 400 19px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; fill: #b1bac4; }
+  .icon { fill: none; stroke: #ff453a; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round;
+          stroke-dasharray: 220; animation: draw 1.6s ease-out 0.45s backwards; }
+  @keyframes draw { from { stroke-dashoffset: 220; } }
+  .float { animation: float 4s ease-in-out 0.25s infinite; }
+  @keyframes float { 50% { transform: translateY(-6px); } }
+  .ring { fill: #ff453a; fill-opacity: .1; stroke: #ff453a; stroke-opacity: .35; }
+  .trace { stroke-dasharray: 260 1340; animation: trace 5s linear 0.25s infinite; }
+  @keyframes trace { to { stroke-dashoffset: -1600; } }
+  .in { animation: in .8s cubic-bezier(.2,.8,.2,1) 0.25s backwards; }
+  @keyframes in { from { opacity: 0; transform: translateY(10px); } }
+  .arrow { animation: nudge 1.8s ease-in-out infinite; }
+  @keyframes nudge { 50% { transform: translateX(5px); } }
+  
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="600" height="210" rx="16" fill="#0d1117"/>
+<rect width="600" height="210" rx="16" fill="url(#glow)"/>
+<rect x=".5" y=".5" width="599" height="209" rx="16" fill="none" stroke="#1f2633"/>
+<rect class="trace" x="1" y="1" width="598" height="208" rx="16" fill="none" stroke="url(#edge)" stroke-width="2" pathLength="1600"/>
+<g class="float"><circle class="ring" cx="530" cy="64" r="38"/><g transform="translate(530 64) scale(.95)" class="icon"><ellipse cx="0" cy="4" rx="11" ry="15"/><circle cx="0" cy="-14" r="6"/><path d="M-11,0H-21M11,0H21M-10,-8L-18,-15M10,-8L18,-15M-10,12L-18,19M10,12L18,19M0,-8V19"/></g></g>
+<g class="in">
+  <text x="32" y="48" class="tag">NVIDIA × NEBIUS</text>
+  <text x="30" y="96" class="h">SegSense<tspan class="arrow" dx="10" fill="#ff453a" font-size="24">→</tspan></text>
+  <text x="32" y="142" class="p">Agentic debugger for C memory bugs:</text><text x="32" y="170" class="p">ASan catches it, Nemotron patches it.</text>
+</g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="Featured project: CycloneSentinel">
+<title>Featured project: CycloneSentinel</title>
+<defs>
+  <radialGradient id="eye"><stop offset="0" stop-color="#64d2ff" stop-opacity=".9"/><stop offset=".25" stop-color="#2997ff" stop-opacity=".35"/><stop offset="1" stop-color="#2997ff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="arm" x1="0" y1="0" x2="0" y2="-1" gradientUnits="objectBoundingBox">
+    <stop offset="0" stop-color="#64d2ff"/><stop offset="1" stop-color="#2997ff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="sweep" x1="0" x2="1"><stop offset="0" stop-color="#30d158" stop-opacity="0"/><stop offset="1" stop-color="#30d158" stop-opacity=".45"/></linearGradient>
+  <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#2997ff"/><stop offset=".5" stop-color="#bf5af2"/><stop offset="1" stop-color="#30d158"/></linearGradient>
+  <clipPath id="radar"><circle cx="175" cy="165" r="135"/></clipPath>
+</defs>
+<style>
+  .tag { font: 700 15px 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, monospace; fill: #ff9f0a; letter-spacing: 2.5px; }
+  .h { font: 800 54px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; fill: #e6edf3; letter-spacing: -1.2px; }
+  .p { font: 400 22px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; fill: #c9d1d9; }
+  .chip { font: 600 16px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; }
+  .storm { transform-origin: 175px 165px; animation: spin 7s linear infinite; }
+  .storm2 { transform-origin: 175px 165px; animation: spin 12s linear infinite; opacity: .5; }
+  .sweep { transform-origin: 175px 165px; animation: spin 4s linear infinite; }
+  @keyframes spin { to { transform: rotate(-360deg); } }
+  .ping { transform-box: fill-box; transform-origin: center; animation: ping 2.4s ease-out infinite; }
+  @keyframes ping { 0% { transform: scale(.4); opacity: .9; } 100% { transform: scale(3); opacity: 0; } }
+  .reveal { animation: up .8s cubic-bezier(.2,.8,.2,1) backwards; }
+  @keyframes up { from { opacity: 0; transform: translateY(14px); } }
+  .border { stroke-dasharray: 600 2400; animation: trace 6s linear infinite; }
+  @keyframes trace { to { stroke-dashoffset: -3000; } }
+  
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1200" height="330" rx="18" fill="#0d1117"/>
+<rect x=".5" y=".5" width="1199" height="329" rx="18" fill="none" stroke="#1f2633"/>
+<rect class="border" x="1" y="1" width="1198" height="328" rx="18" fill="none" stroke="url(#edge)" stroke-width="2" pathLength="3000"/>
+
+<circle cx="175" cy="165" r="135" fill="#05080c" stroke="#30d158" stroke-opacity=".25"/>
+<g stroke="#30d158" stroke-opacity=".12" fill="none">
+  <circle cx="175" cy="165" r="90"/><circle cx="175" cy="165" r="45"/>
+  <path d="M40 165H310M175 30V300"/></g>
+<g clip-path="url(#radar)">
+  <g class="sweep"><path d="M175 165 L310 165 A135 135 0 0 0 270 70 Z" fill="url(#sweep)"/></g>
+  <g class="storm2"><g transform="translate(175 165) scale(1.25)"><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(0)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(90)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(180)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(270)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/></g></g>
+  <g class="storm"><g transform="translate(175 165)"><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(0)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(90)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(180)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/><path d="M0,-30 C30,-34 62,-60 60,-98 C58,-118 44,-130 24,-136" transform="rotate(270)" fill="none" stroke="#64d2ff" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/></g></g>
+  <circle cx="175" cy="165" r="38" fill="url(#eye)"/>
+</g>
+<g fill="#ff453a"><circle cx="248" cy="118" r="4"/><circle class="ping" cx="248" cy="118" r="4"/>
+  <circle cx="120" cy="222" r="4"/><circle class="ping" cx="120" cy="222" r="4" style="animation-delay:.8s"/>
+  <circle cx="232" cy="236" r="4"/><circle class="ping" cx="232" cy="236" r="4" style="animation-delay:1.6s"/></g>
+
+<g class="reveal" style="animation-delay:.1s"><text x="390" y="70" class="tag">FEATURED · BUILD WITH AI: CODE FOR COMMUNITIES</text></g>
+<g class="reveal" style="animation-delay:.3s"><text x="388" y="128" class="h">CycloneSentinel</text></g>
+<g class="reveal" style="animation-delay:.55s">
+  <text x="390" y="172" class="p">Predicts which hospitals, substations and roads</text>
+  <text x="390" y="204" class="p">a cyclone will break, <tspan fill="#64d2ff" font-weight="700">24 hours before landfall</tspan>.</text>
+</g>
+<g class="reveal" style="animation-delay:0.90s"><rect x="390" y="240" width="188" height="38" rx="19" fill="#2997ff" fill-opacity=".12" stroke="#2997ff" stroke-opacity=".5"/><text x="484" y="265" text-anchor="middle" class="chip" fill="#2997ff">40-storm ensemble</text></g><g class="reveal" style="animation-delay:1.05s"><rect x="590" y="240" width="244" height="38" rx="19" fill="#bf5af2" fill-opacity=".12" stroke="#bf5af2" stroke-opacity=".5"/><text x="712" y="265" text-anchor="middle" class="chip" fill="#bf5af2">Gemini satellite vision</text></g><g class="reveal" style="animation-delay:1.20s"><rect x="846" y="240" width="310" height="38" rx="19" fill="#30d158" fill-opacity=".12" stroke="#30d158" stroke-opacity=".5"/><text x="1001" y="265" text-anchor="middle" class="chip" fill="#30d158">Odia · Telugu · Bengali alerts</text></g>
+</svg>

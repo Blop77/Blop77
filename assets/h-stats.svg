@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="96" viewBox="0 0 1200 96" role="img" aria-label="Activity">
+<title>Activity</title>
+<defs>
+  <linearGradient id="g" x1="0" x2="1">
+    <stop offset="0" stop-color="#30d158"/><stop offset="1" stop-color="#30d158" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<style>
+  .idx { font: 700 15px 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', Menlo, monospace; fill: #30d158; letter-spacing: 3px; }
+  .lbl { font: 800 34px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Ubuntu, 'DejaVu Sans', Arial, sans-serif; fill: #e6edf3; letter-spacing: -.5px; }
+  .bar { transform-box: fill-box; transform-origin: left;
+         animation: grow 1.4s cubic-bezier(.7,0,.2,1) .2s backwards; }
+  @keyframes grow { from { transform: scaleX(0); } }
+  .dot { fill: #30d158; animation: run 3.2s cubic-bezier(.6,0,.4,1) 1.6s infinite; opacity: 0; }
+  @keyframes run { 0% { transform: translateX(0); opacity: 0; } 10% { opacity: 1; }
+                   90% { opacity: 1; } 100% { transform: translateX(918px); opacity: 0; } }
+  .in { animation: in .8s cubic-bezier(.2,.8,.2,1) backwards; }
+  @keyframes in { from { opacity: 0; transform: translateX(-14px); } }
+  
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1200" height="96" rx="14" fill="#07090d"/>
+<rect x=".5" y=".5" width="1199" height="95" rx="14" fill="none" stroke="#1f2633"/>
+<rect x="0" y="18" width="5" height="60" rx="2.5" fill="#30d158"/>
+<g class="in"><text x="30" y="34" class="idx">04 /</text>
+<text x="30" y="74" class="lbl">Activity</text></g>
+<rect class="bar" x="208" y="63" width="962" height="2" fill="url(#g)"/>
+<circle class="dot" cx="210" cy="64" r="4"/>
+</svg>
